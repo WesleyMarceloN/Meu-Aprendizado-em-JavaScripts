@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("Bem Vindo ao Meu mini game");
+        alert("O Mini Game consiste no seguinte, vai haver duas opçao o 0 e o 1");
+        alert("Caso o 0 for sorteado quem escolher o menor numero ganha e o numero 1 ganha quem escolher o maior numero");
+        
+        
+        
+        var n1 = prompt("Jogador 1 Digite um numero aleatorio");
+        n1 = parseInt(n1);
+
+        var n2 = prompt("Jogador 2 Digite um numero aleatorio");
+        n2 = parseInt(n2);
+
+        
+
+        if(n1 === n2){
+            alert("Empate")
+        } else {
+            var n3 = Math.random() * 2;
+            n3 = parseInt(n3)
+
+            if(n3 === 0){
+                if(n1 < n2){
+                    alert("Jogador 1 ganhou")
+                } else{
+                    alert("Jogador 2 ganhou")
+                }
+            } else {
+                if(n1 > n2){
+                    alert("Jogador 2 ganhou")
+                } else {
+                    alert("Jogador 1 ganhou")
+                }
+            }
+
+        };
+        
+    </script>
+</body>
+</html>
