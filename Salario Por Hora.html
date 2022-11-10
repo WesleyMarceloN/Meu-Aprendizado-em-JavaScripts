@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Salario Por Hora</title>
+</head>
+<body>
+    <!-- Curso Lógica de Programaçao Completo Canal Dev Aprender -->
+    <!-- Escreva um Programa que retorne o valor hora de um funcionario com base no seu salario mensal e horas trabalhadas por mes -->
+
+    <script>
+        var Salarior = prompt("Qual o Foi o Seu Salario? (obs: Sem pontuaçao)");
+        Salarior = parseInt(Salarior);
+
+        var HTrab = prompt("Quantas Horas Voce Trabalhou? (arredonda)");
+        HTrab = parseInt(HTrab);
+
+        var SPH = (Salarior / HTrab); 
+        SPH = parseInt(SPH);
+
+        alert("Voce Recebeu " + SPH + " Por Hora" );
+
+    </script>
+</body>
+</html>
